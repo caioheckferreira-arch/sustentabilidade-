@@ -1,0 +1,389 @@
+/* ===================================== */
+/* ESTILOS GERAIS - Reset e configurações básicas */
+/* ===================================== */
+
+/* O * seleciona todos os elementos da página */
+* {
+    margin: 0;           /* Remove margens padrão */
+    padding: 0;          /* Remove espaçamentos internos padrão */
+    box-sizing: border-box; /* Faz com que padding não aumente a largura dos elementos */
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte moderna e legível */
+    line-height: 1.6;    /* Altura entre linhas (facilita a leitura) */
+    color: #333;          /* Cor do texto principal (cinza escuro) */
+    background-color: #f0f7f0; /* Fundo verde bem clarinho */
+}
+
+/* Container - centraliza e limita a largura do conteúdo */
+.container {
+    max-width: 1200px;    /* Largura máxima (não passa disso em telas grandes) */
+    margin: 0 auto;       /* Centraliza na horizontal */
+    padding: 0 20px;      /* Espaçamento nas laterais (importante para mobile) */
+}
+
+/* ===================================== */
+/* CABEÇALHO E MENU */
+/* ===================================== */
+
+.cabecalho {
+    background: linear-gradient(135deg, #0A2472, #1B4D3E); /* Degradê de azul escuro para verde escuro */
+    color: white;
+    padding: 15px 0;
+    position: sticky;     /* Menu fica fixo no topo */
+    top: 0;
+    z-index: 100;         /* Fica acima de outros elementos */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2); /* Sombra suave */
+}
+
+.menu {
+    display: flex;        /* Usa flexbox para organizar os itens */
+    justify-content: space-between; /* Logo de um lado, menu do outro */
+    align-items: center;  /* Alinha verticalmente ao centro */
+    flex-wrap: wrap;      /* Permite quebrar linha em mobile */
+}
+
+.logo {
+    font-size: 1.5rem;    /* Tamanho da fonte */
+    font-weight: bold;    /* Negrito */
+    color: #7DF9FF;       /* Azul claro */
+}
+
+.menu-lista {
+    display: flex;        /* Itens do menu lado a lado */
+    list-style: none;     /* Remove as bolinhas da lista */
+    gap: 20px;            /* Espaço entre os itens */
+    flex-wrap: wrap;      /* Permite quebrar linha */
+}
+
+.menu-link {
+    color: white;
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 20px;   /* Borda arredondada */
+    transition: all 0.3s;  /* Animação suave */
+}
+
+.menu-link:hover {
+    background-color: #7DF9FF; /* Fundo azul claro ao passar o mouse */
+    color: #0A2472;            /* Texto azul escuro */
+}
+
+/* ===================================== */
+/* SEÇÃO HERO (INÍCIO) */
+/* ===================================== */
+
+.hero {
+    background: linear-gradient(145deg, #4CAF50, #2196F3, #9C27B0); /* Gradiente colorido */
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    min-height: 80vh;     /* Altura mínima de 80% da tela */
+    display: flex;
+    align-items: center;  /* Centraliza verticalmente */
+}
+
+.hero-titulo {
+    font-size: 3.5rem;    /* Título bem grande */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;  /* Espaçamento entre letras */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Sombra no texto */
+}
+
+.hero-subtitulo {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    font-weight: 300;     /* Fonte mais fina */
+}
+
+/* ===================================== */
+/* BOTÃO */
+/* ===================================== */
+
+.botao {
+    background-color: #FF5722; /* Laranja */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;      /* Bem arredondado */
+    cursor: pointer;          /* Mãozinha ao passar o mouse */
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.botao:hover {
+    background-color: #FF7043; /* Laranja mais claro */
+    transform: scale(1.05);    /* Aumenta levemente de tamanho */
+}
+
+/* ===================================== */
+/* SEÇÕES EM GERAL */
+/* ===================================== */
+
+.secao {
+    padding: 80px 0;
+}
+
+.secao-clara {
+    background-color: #E8F5E9; /* Verde muito clarinho */
+}
+
+.titulo-secao {
+    font-size: 2.5rem;
+    color: #1B4D3E;        /* Verde escuro */
+    margin-bottom: 40px;
+    border-bottom: 4px solid #FF5722; /* Linha laranja */
+    padding-bottom: 10px;
+    display: inline-block;  /* A borda só fica abaixo do texto */
+}
+
+/* ===================================== */
+/* QUEM SOU EU */
+/* ===================================== */
+
+.quem-sou-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 50px;            /* Espaço entre imagem e texto */
+    flex-wrap: wrap;      /* Quebra linha em mobile */
+}
+
+.foto-container {
+    flex: 0 0 200px;      /* Largura fixa de 200px */
+}
+
+.foto-perfil {
+    width: 100%;
+    border-radius: 50%;   /* Deixa a imagem redonda */
+    border: 5px solid #FF5722; /* Borda laranja */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.quem-sou-texto {
+    flex: 1;              /* Ocupa o espaço restante */
+    font-size: 1.2rem;
+}
+
+.destaque {
+    font-size: 1.5rem;
+    color: #0A2472;       /* Azul escuro */
+    margin-bottom: 20px;
+}
+
+/* ===================================== */
+/* SEÇÃO DESAFIO */
+/* ===================================== */
+
+.texto-destaque {
+    font-size: 2rem;
+    color: #FF5722;       /* Laranja */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.texto-normal {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.citacao {
+    background-color: #1B4D3E; /* Verde escuro */
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 30px 0;
+    font-size: 1.3rem;
+    font-style: italic;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.lista-desafio {
+    list-style: none;     /* Remove as bolinhas padrão */
+    margin-top: 30px;
+}
+
+.lista-item {
+    font-size: 1.2rem;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ccc; /* Linha pontilhada */
+}
+
+/* ===================================== */
+/* CARDS (SOLUÇÃO) */
+/* ===================================== */
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colunas que se ajustam */
+    gap: 30px;            /* Espaço entre cards */
+    margin-top: 40px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    border: 1px solid #e0e0e0;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Sobe ao passar o mouse */
+}
+
+.card-icone {
+    font-size: 3rem;      /* Ícone grande */
+    margin-bottom: 15px;
+}
+
+.card-titulo {
+    font-size: 1.5rem;
+    color: #1B4D3E;       /* Verde escuro */
+    margin-bottom: 15px;
+}
+
+.card-texto {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card-botao {
+    background-color: #2196F3; /* Azul */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.card-botao:hover {
+    background-color: #1976D2; /* Azul mais escuro */
+}
+
+.card-mensagem {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* ===================================== */
+/* SEÇÃO CONTATO */
+/* ===================================== */
+
+.contato-info {
+    background-color: #0A2472; /* Azul escuro */
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-size: 1.3rem;
+}
+
+.contato-email, .contato-telefone {
+    padding: 10px 0;
+}
+
+/* ===================================== */
+/* RODAPÉ */
+/* ===================================== */
+
+.rodape {
+    background-color: #1B4D3E; /* Verde escuro */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* ===================================== */
+/* DESIGN RESPONSIVO - Adaptação para telas menores */
+/* ===================================== */
+
+/* TABLET (telas até 992px) */
+@media (max-width: 992px) {
+    .hero-titulo {
+        font-size: 2.8rem;
+    }
+    
+    .hero-subtitulo {
+        font-size: 1.5rem;
+    }
+}
+
+/* TABLET PEQUENO / CELULAR GRANDE (telas até 768px) */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Logo e menu um em cima do outro */
+        gap: 15px;
+    }
+    
+    .menu-lista {
+        justify-content: center;
+    }
+    
+    .hero-titulo {
+        font-size: 2.2rem;
+    }
+    
+    .hero-subtitulo {
+        font-size: 1.2rem;
+    }
+    
+    .quem-sou-conteudo {
+        flex-direction: column; /* Imagem em cima, texto embaixo */
+        text-align: center;
+    }
+    
+    .titulo-secao {
+        font-size: 2rem;
+    }
+}
+
+/* CELULAR (telas até 480px) */
+@media (max-width: 480px) {
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .hero-titulo {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitulo {
+        font-size: 1rem;
+    }
+    
+    .botao {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+    
+    .secao {
+        padding: 50px 0;
+    }
+    
+    .titulo-secao {
+        font-size: 1.6rem;
+    }
+    
+    .card {
+        padding: 20px 15px;
+    }
+}

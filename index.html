@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Meta tags básicas - importantes para o funcionamento do site -->
+    <meta charset="UTF-8">
+    <!-- Essa tag faz o site se adaptar a qualquer tela (celular, tablet, pc) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título que aparece na aba do navegador -->
+    <title>Futuro Sustentável | Palestra de Caio</title>
+    
+    <!-- Link para o arquivo CSS (estilos) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO DO SITE (MENU) -->
+    <!-- O header é a parte de cima do site, que fica fixa no topo -->
+    <header class="cabecalho">
+        <div class="container">
+            <nav class="menu">
+                <!-- Logo do site -->
+                <div class="logo">🌍 Futuro Sustentável</div>
+                
+                <!-- Lista do menu (ul = lista não ordenada) -->
+                <ul class="menu-lista">
+                    <!-- Cada item da lista (li) é um link para uma seção -->
+                    <li><a href="#inicio" class="menu-link">Início</a></li>
+                    <li><a href="#quem-sou" class="menu-link">Quem Sou</a></li>
+                    <li><a href="#desafio" class="menu-link">Desafio</a></li>
+                    <li><a href="#solucao" class="menu-link">Solução</a></li>
+                    <li><a href="#contato" class="menu-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL DO SITE -->
+    <main>
+
+        <!-- SEÇÃO 1: INÍCIO (PÁGINA 1 DOS SLIDES) -->
+        <!-- O id serve para o menu linkar com esta seção -->
+        <section id="inicio" class="secao hero">
+            <div class="container">
+                <div class="hero-conteudo">
+                    <!-- Título principal da página -->
+                    <h1 class="hero-titulo">futuro sustentável</h1>
+                    <!-- Subtítulo -->
+                    <p class="hero-subtitulo">equilíbrio entre produção e meio ambiente</p>
+                    <!-- Botão para interação com JavaScript -->
+                    <button id="botaoMensagem" class="botao">Clique para uma mensagem 🌱</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: QUEM SOU EU (PÁGINA 2 DOS SLIDES) -->
+        <section id="quem-sou" class="secao">
+            <div class="container">
+                <!-- Título da seção -->
+                <h2 class="titulo-secao">Quem sou eu?</h2>
+                
+                <div class="quem-sou-conteudo">
+                    <!-- Imagem de perfil (usei um placeholder, você pode trocar depois) -->
+                    <div class="foto-container">
+                        <img src="https://via.placeholder.com/200/4CAF50/ffffff?text=Caio" alt="Foto do Caio" class="foto-perfil">
+                    </div>
+                    
+                    <!-- Texto de apresentação -->
+                    <div class="quem-sou-texto">
+                        <p class="destaque">Oi! Sou <strong>Caio</strong>, um palestrante apaixonado por inspirar e capacitar pessoas a alcançarem seu pleno potencial.</p>
+                        <p>Hoje vamos conversar sobre um tema que está moldando o futuro do nosso planeta: como equilibrar a produção industrial com a preservação ambiental.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 3: O DESAFIO (PÁGINA 3 DOS SLIDES) -->
+        <section id="desafio" class="secao secao-clara">
+            <div class="container">
+                <h2 class="titulo-secao">O Desafio</h2>
+                
+                <!-- Frase de destaque -->
+                <p class="texto-destaque">é um tema crucial para os dias de hoje.</p>
+                
+                <!-- Texto explicativo -->
+                <p class="texto-normal">Historicamente, o progresso industrial foi pautado no modelo de extração, produção e descarte. No entanto, os limites planetários mostram que esse ciclo é insustentável.</p>
+                
+                <!-- Citação importante (como um bloco de destaque) -->
+                <div class="citacao">
+                    <p>"Um futuro sustentável exige uma mudança de paradigma: a transição da economia linear para a <strong>economia circular</strong>, onde o resíduo de um processo se torna o insumo de outro."</p>
+                </div>
+                
+                <!-- Resumo em bullet points (lista) -->
+                <ul class="lista-desafio">
+                    <li class="lista-item">📍 Modelo atual: extrair → produzir → descartar</li>
+                    <li class="lista-item">⚠️ Limites planetários estão sendo ultrapassados</li>
+                    <li class="lista-item">🔄 Solução: Economia Circular</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 4: A SOLUÇÃO (PÁGINA 4 E 5 DOS SLIDES) -->
+        <section id="solucao" class="secao">
+            <div class="container">
+                <h2 class="titulo-secao">A Produção Sustentável e a Tecnologia</h2>
+                
+                <!-- Subtítulo -->
+                <p class="subtitulo">A chave para equilibrar a balança econômica e ecológica reside na <strong class="destaque-verde">eficiência</strong>.</p>
+                <p class="texto-normal">Não se trata de parar de produzir, mas de produzir com menor impacto.</p>
+                
+                <!-- CARDS - Representam os bullets points dos slides -->
+                <div class="cards-grid">
+                    
+                    <!-- Card 1: Energias Renováveis -->
+                    <div class="card" id="card1">
+                        <div class="card-icone">🌞</div>
+                        <h3 class="card-titulo">Energias Renováveis</h3>
+                        <p class="card-texto">A substituição de combustíveis fósseis por matrizes limpas (solar, eólica, hidrogênio verde) reduz drasticamente a pegada de carbono industrial.</p>
+                        <!-- Botão escondido que aparece quando clicar (para o JavaScript) -->
+                        <button class="card-botao" data-card="1">Saiba mais</button>
+                        <p class="card-mensagem" id="mensagem1" style="display: none;">Isso pode reduzir em até 70% as emissões de CO2!</p>
+                    </div>
+                    
+                    <!-- Card 2: Agricultura Regenerativa -->
+                    <div class="card" id="card2">
+                        <div class="card-icone">🌱</div>
+                        <h3 class="card-titulo">Agricultura Regenerativa</h3>
+                        <p class="card-texto">Diferente da agricultura intensiva comum, este modelo foca na saúde do solo e na biodiversidade, utilizando técnicas que sequestram carbono em vez de liberá-lo.</p>
+                        <button class="card-botao" data-card="2">Saiba mais</button>
+                        <p class="card-mensagem" id="mensagem2" style="display: none;">Pode recuperar solos degradados em apenas 3-5 anos!</p>
+                    </div>
+                    
+                    <!-- Card 3: Indústria 4.0 -->
+                    <div class="card" id="card3">
+                        <div class="card-icone">🤖</div>
+                        <h3 class="card-titulo">Indústria 4.0</h3>
+                        <p class="card-texto">O uso de Inteligência Artificial e IoT (Internet das Coisas) permite monitorar desperdícios em tempo real, otimizando o uso de água e matéria-prima.</p>
+                        <button class="card-botao" data-card="3">Saiba mais</button>
+                        <p class="card-mensagem" id="mensagem3" style="display: none;">Redução de até 30% no consumo de água e energia!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 5: CONTATO/FECHAMENTO -->
+        <section id="contato" class="secao secao-clara">
+            <div class="container">
+                <h2 class="titulo-secao">Vamos espalhar essa ideia?</h2>
+                <p class="texto-normal">Quer levar essa palestra para sua escola, empresa ou evento? Entre em contato!</p>
+                
+                <div class="contato-info">
+                    <p class="contato-email">📧 caio.palestrante@sustentavel.com</p>
+                    <p class="contato-telefone">📱 (11) 99999-9999</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ DO SITE -->
+    <footer class="rodape">
+        <div class="container">
+            <p>Site criado para trabalho escolar do 2º ano do Ensino Médio</p>
+            <p>Conteúdo baseado na palestra de Caio sobre Futuro Sustentável</p>
+            <p class="copyright">© 2024 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Link para o arquivo JavaScript (sempre colocar antes do fechamento do body) -->
+    <script src="script.js"></script>
+</body>
+</html>
